@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise1_Profile</title>
+  </head>
+  <body>
+    <h1>Profil</h1>
+    <p><em>Hier können Sie Ihre Adress-Angaben einsehen und anpassen</em></p>
+    <hr />
+    <main>
+      <form action="/user.something.html" method="post">
+        <section class="personal">
+          <h2>Persönliche Daten</h2>
+          <label for="titel"> Titel </label>
+          <datalist id="titel">
+            <option value="Herr"></option>
+            <option value="Frau"></option>
+            <option value="Dr"></option>
+            <option value="Prof"></option>
+            <option selected></option>
+          </datalist>
+          <label for="vorname">Vorname</label>
+          <input
+            type="text"
+            id="vorname"
+            name="vorname"
+            placeholder="zB. John"
+            required
+          />
+          <label for="nachname">Nachname</label>
+          <input
+            type="text"
+            id="nachname"
+            name="nachname"
+            placeholder="zB. Doe"
+            required
+          />
+          <label for="geschlecht">Geschlecht</label>
+          <label> <input type="button" id="geschlecht" value="w"/>W </label>
+          <label> <input type="button" id="geschlecht" value="m"/>M </label>
+          <label for="sprache">Sprache</label>
+          <label> <input type="button" id="sprache" value="de"/>DE </label>
+          <label> <input type="button" id="sprache" value="fr"/>FR </label>
+          <label> <input type="button" id="sprache" value="it"/>IT </label>
+        </section>
+        <br />
+        <hr />
+        <section class="kontakt">
+          <h2>Kontaktdaten</h2>
+          <label for="telefon">Telefon</label>
+          <input
+            type="tel"
+            id="telefon"
+            name="telefon"
+            placeholder="+41 78 320 3322"
+            required
+          />
+          <label for="mobile">Mobile</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="optional" />
+          <label for="hauptnummer">Hauptnummer</label>
+          <input
+            type="tel"
+            id="hauptnummer"
+            name="hauptnummer"
+            placeholder="optional"
+          />
+          <label for="fax">Fax</label>
+          <input type="text" id="fax" name="fax" placeholder="optional" />
+          <label for="email">Mail 1</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="zB. johndoe@example.com"
+            required
+          />
+          <label for="email">Mail 2</label>
+          <input type="email" id="email" name="email" placeholder="optional" />
+        </section>
+        <br />
+        <hr />
+        <section>
+          <h2>Adressdaten</h2>
+          <label for="firma">Firma</label>
+          <input type="text" id="firma" name="firma" />
+          <label for="zusatz-firma">Zusatz Firma</label>
+          <input
+            type="text"
+            id="zusatz-firma"
+            name="zusatz-firma"
+            placeholder="optional"
+          />
+          />
+          <label for="homepage">Homepage</label>
+          <input
+            type="text"
+            id="homepage"
+            name="homepage"
+            placeholder="optional"
+          />
+          />
+          <label for="adresse-haus-nr">Adresse / Haus Nr</label>
+          <input
+            type="text"
+            id="adresse-haus-nr"
+            name="adresse-haus-nr"
+            placeholder="zB. Zurichstrasse 3"
+            required
+          />
+          <label for="zusatz-adresse">Zusatz Adresse</label>
+          <input
+            type="text"
+            id="zusatz-adresse"
+            name="zusatz-adresse"
+            placeholder="optional"
+          />
+          <label for="postfach">Postfach</label>
+          <input
+            type="text"
+            id="postfach"
+            name="postfach"
+            placeholder="optional"
+          />
+          <label for="plz-ort">PLZ / Ort</label>
+          <input
+            type="number"
+            id="plz-ort"
+            name="plz-ort"
+            required
+          />
+          <input type="text" id="plz-ort" name="plz-ort" required />
+          <label for="kanton-land">Kanton / Land</label>
+          <input
+            type="text"
+            id="kanton-land"
+            name="kanton-land"
+            placeholder="BE"
+            required
+            maxlength="2"
+          />
+          <input
+            type="text"
+            id="kanton-land"
+            name="kanton-land"
+            placeholder="Bern"
+            required
+          />
+        </section>
+        <button type="submit">Speichern</button>
+      </form>
+    </main>
+  </body>
+</html>

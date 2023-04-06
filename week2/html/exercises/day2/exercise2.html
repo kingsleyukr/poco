@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-2-layout</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Bottles Boutique</a></li>
+        <li><a href="#">Shop Bottles</a></li>
+        <li><a href="#">Reviews & Stories</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#"><i>icon</i></a>
+        </li>
+        <li>
+          <a href="#"><i>icon</i></a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Checkout Form</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Your order</h2>
+        <p>
+          <span>Product</span>
+          <span>Quantity</span>
+          <span>Total</span>
+        </p>
+        <hr />
+        <p>
+          <span>Bottle</span>
+          <span>1</span>
+          <span>CHF 45.00</span>
+        </p>
+        <p>
+          <span>`Total</span>
+          <span>CHF 45.00</span>
+        </p>
+      </section>
+      <form action="/something.internet" method="post">
+        <h2>Billing Address</h2>
+        <p>*Require fields</p>
+        <section>
+          <h3>Contact details</h3>
+          <label for="fname">First Name <sup>*</sup></label>
+          <input
+            type="text"
+            placeholder="John"
+            name="fname"
+            id="fname"
+            required
+          />
+          <label for="lname">Last Name <sup>*</sup></label>
+          <input
+            type="text"
+            placeholder="Doe"
+            name="lname"
+            id="lname"
+            required
+          />
+          <label for="email">Email <sup>*</sup></label>
+          <input
+            type="email"
+            placeholder="johndoe@example.com"
+            name="email"
+            id="email"
+            required
+          />
+        </section>
+        <section>
+          <h3>Address Details</h3>
+          <label for="company">Company</label>
+          <input type="text" name="company" id="company" />
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" />
+          <label for="zipcode">Zip code</label>
+          <input type="text" name="zipcode" id="zipcode" />
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" />
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" /> <br />
+          <label for="selected-address"
+            ><input
+              type="checkbox"
+              name="selected-address"
+              id="selected-address"
+            />Send to this address</label
+          >
+        </section>
+        <section>
+          <h3>Shipping address</h3>
+          <label for="fname">First name</label>
+          <input type="text" name="fname" id="fname" />
+          <label for="lname">Last name</label>
+          <input type="text" name="lname" id="lname" />
+          <label for="company">Company</label>
+          <input type="text" name="company" id="company" />
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" />
+          <label for="zipcode">Zip code</label>
+          <input type="text" name="zipcode" id="zipcode" />
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" />
+        </section>
+        <section>
+          <h3>Delivery method <sup>*</sup></h3>
+          <label for="pickup"
+            ><input type="radio" id="pickup" name="pickup" />Pick Up (CHF
+            0.00)</label
+          >
+          <label for="post"
+            ><input type="radio" id="post" name="post" />Post (CHF 7.00)</label
+          >
+        </section>
+        <section>
+          <h3>Payment method <sup>*</sup></h3>
+          <label for="twint"
+            ><input type="radio" id="twint" name="twint" />Twint</label
+          >
+          <label for="invoice"
+            ><input type="radio" id="invoice" name="invoice" />Invoice</label
+          >
+          <label for="comment">Comment</label>
+          <textarea name="comment" id="comment" cols="20" rows="10"></textarea>
+        </section>
+        <button type="submit">Submit</button>
+      </form>
+      <article>
+        <h2>Stories</h2>
+        <p><a href="">All stories and reviews</a></p>
+        <section>
+          <h3>Co-brand your bottle</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quas
+            facilis perferendis, laboriosam doloribus alias.
+          </p>
+          <details>
+            <summary>Read more >></summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              culpa quidem eligendi, dolore itaque nesciunt maiores eos adipisci
+              ab in distinctio asperiores expedita obcaecati fugiat id dicta
+              sapiente unde quam ipsam consectetur maxime, nam possimus sit!
+              Nostrum eos quam libero odit distinctio, et quod facilis, ab
+              reprehenderit numquam beatae in omnis recusandae saepe culpa
+              voluptatibus vitae similique odio consequuntur ad voluptate, alias
+              officia sequi minima! Quidem at sit accusantium rerum nulla
+              impedit et, officia minima doloribus ad qui iure eum voluptates
+              temporibus cupiditate sed quaerat quae totam maxime sapiente quod
+              ullam asperiores fuga expedita! Ab quibusdam nihil soluta deleniti
+              maiores.
+            </p>
+          </details>
+        </section>
+        <section>
+          <h3>Top reviews</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quas
+            facilis perferendis, laboriosam doloribus alias.
+          </p>
+          <details>
+            <summary>Read more >></summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              culpa quidem eligendi, dolore itaque nesciunt maiores eos adipisci
+              ab in distinctio asperiores expedita obcaecati fugiat id dicta
+              sapiente unde quam ipsam consectetur maxime, nam possimus sit!
+              Nostrum eos quam libero odit distinctio, et quod facilis, ab
+              reprehenderit numquam beatae in omnis recusandae saepe culpa
+              voluptatibus vitae similique odio consequuntur ad voluptate, alias
+              officia sequi minima! Quidem at sit accusantium rerum nulla
+              impedit et, officia minima doloribus ad qui iure eum voluptates
+              temporibus cupiditate sed quaerat quae totam maxime sapiente quod
+              ullam asperiores fuga expedita! Ab quibusdam nihil soluta deleniti
+              maiores.
+            </p>
+          </details>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <h3>Support</h3>
+      <ul>
+        <li>Contact us</li>
+        <li>FAQ</li>
+        <li>Return & Refund</li>
+      </ul>
+      <h3>Legal</h3>
+      <ul>
+        <li>Terms & Conditions</li>
+        <li>Privacy</li>
+      </ul>
+      <h3>About us</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+        fugiat eos accusantium. Nemo, saepe? Quae aliquam maiores libero
+        necessitatibus quod.
+      </p>
+      <p>
+        <small
+          >&copy; 2023, Bottles Boutique, Sample Street 5, 7897 Sample
+          City</small
+        >
+      </p>
+    </footer>
+  </body>
+</html>
