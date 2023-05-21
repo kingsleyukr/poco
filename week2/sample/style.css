@@ -1,0 +1,75 @@
+* {
+  /* default browser margin creates a scroll bar */
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav > ul > li, a {
+    list-style: none;
+    text-decoration: none;
+  }
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+/* body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  position: sticky;
+}
+
+min width 751px
+@media only screen and (min-width: 46.938em) {
+} */
+
+/* min width 1025px */
+
+/*
+
+@media only screen and (min-width: 64.063em) {
+  footer {
+    grid-template-areas:
+      "nav nav h3 h3"
+      "nav nav p p"
+      "address address address address";
+    width: 100%;
+  }
+  footer div {
+    width: auto;
+  }
+  footer nav {
+    grid-area: nav;
+  }
+  footer > h3 {
+    grid-area: h3;
+  }
+  footer p {
+    grid-area: p;
+  }
+  footer address {
+    grid-area: address;
+  }
+}
+
+ */

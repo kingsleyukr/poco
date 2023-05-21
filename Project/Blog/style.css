@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+}
+
+body {
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+  height: 100%;
+  font-family: "Lucida Grande", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  background-color: #000;
+  height: 5em;
+}
+
+.logo {
+  width: 6em;
+  text-align: center;
+  margin-left: 1em;
+  color: white;
+}
+
+ul {
+  margin: 0 3em 0 auto;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+  line-height: 5em;
+}
+
+ul li a:hover,
+.cat:hover {
+  padding: 0.5em 0.6em;
+  border-bottom: 1px solid tomato;
+  border-right: 1px solid tomato;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.2s ease-in-out;
+}
+
+ul li a {
+  padding: 0.2em 1em;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + main {
+  padding-top: 60px;
+}
+
+/* End of Navabar */
+
+main {
+  margin-top: 1em;
+  display: flex;
+  padding: 0 1em;
+  gap: 3em;
+  min-height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  flex: 1 1 25%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  margin: 1.5em;
+}
+
+article img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.author {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 1em;
+  font-weight: 600;
+}
+
+input[type="button"] {
+  background-color: #ccc;
+  padding: 0.6em;
+  border: none;
+  border-radius: 0 10px 0 10px;
+}
+
+input[type="button"]:hover {
+  background-color: #ff6347;
+  cursor: pointer;
+}
+
+aside {
+  flex: 1 1 25%;
+  height: fit-content;
+  padding: 0 2em;
+}
+
+aside h1 {
+  margin-top: 0.5em;
+  padding: 0.1em 0.3em;
+  border-bottom: 1px solid #ff6347;
+  border-radius: 0 0 5px 5px;
+}
+
+.cat-block {
+  text-align: right;
+  margin: 1.5em 0;
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  text-align: center;
+  width: 60vw;
+  height: 80vh;
+  gap: 1em;
+}
+
+.about h1 {
+  color: #ff6347;
+}
+
+.about p {
+  line-height: 1.5em;
+}
+
+.contact {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 80vh;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  padding: 25px;
+  margin: 50px 0;
+}
+
+#contact h3 {
+  color: #ff6347;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#contact h4 {
+  text-align: center;
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #ff6347;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+
+footer {
+  display: flex;
+  gap: 2em;
+  text-align: center;
+  height: 2em;
+}
+
+footer ul {
+  display: flex;
+  margin-left: 2.5em;
+}
+
+footer ul li a {
+  color: #000;
+}
+
+footer div {
+  margin-left: auto;
+  margin-right: 50%;
+}
+
+@media only screen and (max-width: 64.063em) {
+  aside {
+    display: none;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+  }
+}

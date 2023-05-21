@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy beautiful bottles online | Bottles Boutique</title>
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- prepare for mobile navigation, css only -->
+    <input type="checkbox" id="toggleMobileNav" />
+    <label for="toggleMobileNav">
+      <span>toggle navigation visibility on mobile</span>
+    </label>
+    <!-- main navigation, depending on layout can be in header -->
+    <nav>
+      <!-- add logo as link back to home -->
+      <a href="en/index.html">
+        <img
+          src="img/logo-bottles-boutique.png"
+          alt="Logo Bottles Boutique"
+          title="Go back to Homepage"
+        />
+      </a>
+      <!-- to add more styling possibilities, wrapping the navigation links in an unordered list is recommended. Semantically also correct, as we talk about a list of links -->
+      <ul>
+        <li>
+          <a href="en/shop.html">Shop bottles</a>
+        </li>
+        <li>
+          <a href="en/reviews.html">Reviews & stories</a>
+        </li>
+        <li>
+          <a href="en/about.html">About</a>
+        </li>
+        <li>
+          <a href="en/account.html">Account</a>
+        </li>
+        <li>
+          <a href="en/cart.html">Shopping cart</a>
+        </li>
+      </ul>
+      <ul class="lang">
+        <li>
+          <a href="en/index.html" class="active">EN</a>
+        </li>
+        <li>
+          <a href="de/index.html">DE</a>
+        </li>
+        <li>
+          <a href="fr/index.html">FR</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <!-- For SEO reasons only one h1 is still recommended, it should be an unique headline per page, can also be in the main section, depending on layout -->
+      <h1>Reusable bottles in beautiful designs.</h1>
+      <p>
+        For water and more. Waterproof. Leak-proof. Keeps you drink ice-cold or
+        super warm. For 24 hours.
+      </p>
+      <a href="en/shop.html">Shop now</a>
+    </header>
+    <main>
+      <!-- Make sure not to skip h-tags. For accessibility you have to count from from 1 to 2 to 3. Never go directly from 1 to 3 -->
+      <h2>Our bottles - beautiful & practical</h2>
+      <!-- If you need more wrapper for styling, use article, section or aside. Divs are only recommended for elements without content and only styling purposes. -->
+      <section>
+        <h3>Benefits</h3>
+        <ul>
+          <li>
+            <!-- add icon here -->
+            <h4>Sustainable resourced</h4>
+          </li>
+          <li>
+            <!-- add icon here -->
+            <h4>100% Recyclable</h4>
+          </li>
+          <li>
+            <!-- add icon here -->
+            <h4>24 hours cold or hot</h4>
+          </li>
+          <li>
+            <!-- add icon here -->
+            <h4>BPA-free</h4>
+          </li>
+        </ul>
+      </section>
+      <article>
+        <h3>Shop bottles</h3>
+        <ul>
+          <li>
+            <a href="en/shop.html?detail=retro">
+              <h4>Retro</h4>
+              <img
+                src="img/bottle-white.jpg"
+                alt="White bottle in retro style"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="en/shop.html?detail=camouflage">
+              <h4>Camouflage</h4>
+              <img
+                src="img/bottle-green.jpg"
+                alt="Stylish bottle in camouflage green"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="en/shop.html?detail=hooks">
+              <h4>Hooks</h4>
+              <img
+                src="img/bottle-grey.jpg"
+                alt="Grey bottle with practical hook"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="en/shop.html?detail=natural">
+              <h4>Natural</h4>
+              <img
+                src="img/bottle-wood.jpg"
+                alt="Bottle in beautiful wooden look"
+              />
+            </a>
+          </li>
+        </ul>
+      </article>
+      <aside>
+        <h3>Stories</h3>
+        <ul>
+          <li>
+            <a href="en/reviews.html">
+              <img src="img/bottle-grey.jpg" alt="Branded bottle" />
+              <h4>Co-brand your bottle</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tenetur, quibusdam.
+              </p>
+              <span class="btn">Read more</span>
+            </a>
+          </li>
+          <li>
+            <a href="en/reviews.html">
+              <img
+                src="img/bottle-glas.jpg"
+                alt="Glas bottle with great reviews"
+              />
+              <h4>Top reviews</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
+                optio maxime assumenda.
+              </p>
+              <span class="btn">Read more</span>
+            </a>
+          </li>
+        </ul>
+        <a href="en/reviews.html" class="btn">All stories and reviews</a>
+      </aside>
+    </main>
+    <footer>
+      <!-- The footer usually contains another less important navigation as well as an address -->
+      <h2 class="visuallyhidden">Footer Navigation</h2>
+      <nav>
+        <h3>About us</h3>
+        <ul>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Stories</a>
+          </li>
+          <li>
+            <a href="">Co-Brand</a>
+          </li>
+        </ul>
+        <h3>Support</h3>
+        <ul>
+          <li>
+            <a href="">Contact us</a>
+          </li>
+          <li>
+            <a href="">FAQ</a>
+          </li>
+          <li>
+            <a href="">Return & Refund</a>
+          </li>
+        </ul>
+        <h3>Legal</h3>
+        <ul>
+          <li>
+            <a href="">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="">Privacy</a>
+          </li>
+        </ul>
+      </nav>
+      <address>
+        Bottles Boutique <br />
+        Sample Street 5 <br />
+        7897 Sample City
+      </address>
+      <small>&copy; 2023, Bottles Boutique</small>
+    </footer>
+    <!-- Add the JavaScript at the end of the html page -->
+    <script src="script.js"></script>
+  </body>
+</html>
