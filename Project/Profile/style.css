@@ -36,7 +36,7 @@ ul {
   flex-direction: column;
   align-items: flex-start;
   gap: 2em;
-  margin: 15em 0 0 2em;
+  margin: 18em 0 0 2em;
 }
 
 .right {
@@ -50,15 +50,17 @@ ul {
   border-radius: 0 10px 10px 0;
 }
 
-img {
+.img {
   flex: 1 1 30%;
   object-fit: cover;
   height: 23em;
   margin: 2em;
-  position: relative;
-  border-radius: 0 0 2em 2em;
 }
 
+img{
+  height: 100%;
+  border-radius: 0 0 2em 2em;
+}
 .profile-container {
   flex: 1 1 65%;
   display: flex;
