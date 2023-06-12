@@ -1,4 +1,5 @@
-require("dotenv").config();
+// require("dotenv").config();
+import API_key from "./apikey.js"
 
 //List of HTML
 const main = document.querySelector("main");
@@ -53,9 +54,9 @@ function myFunction() {
 }
 
 //Api fetch
-const apiKey = process.env.API_KEY;
+// const apiKey = process.env.API_KEY;
 let country = "us";
-let apiURL = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=`;
+let apiURL = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${API_key}`;
 window.addEventListener("load", () => {
   about.remove();
   contact.remove();
