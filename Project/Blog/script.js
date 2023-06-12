@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 //List of HTML
 const main = document.querySelector("main");
 const section = document.querySelector("section");
@@ -40,19 +42,20 @@ links[3].addEventListener("click", () => {
 });
 
 //Nav-scroll
-window.addEventListener('scroll', myFunction);
+window.addEventListener("scroll", myFunction);
 var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
 }
 
 //Api fetch
+const apiKey = process.env.API_KEY;
 let country = "us";
-let apiURL = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=ba6a8e2ce4714e3a99cba68b2eb928ae`;
+let apiURL = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=`;
 window.addEventListener("load", () => {
   about.remove();
   contact.remove();
@@ -121,5 +124,3 @@ function displayNews(pUrl) {
       });
     });
 }
-
-
